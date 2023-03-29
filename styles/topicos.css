@@ -1,0 +1,119 @@
+.topicos{
+    font-family:var(--fonte-principal);
+    background: var(--branco-principal);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.topicos__lista{
+    background: var(--azul-gradiente);
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.topicos__lista__titulo{
+    color: var(--branco-principal);
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+.topicos__lista__botoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.topicos__itens{
+    margin: 1.25rem 0.25rem;
+}
+
+.topicos__links{
+    color: var(--branco-principal);
+    background-color: var(--laranja);
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.topicos__novidades{
+    color: var(--azul-escuro-texto);
+    text-align: left;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.topicos__novidades__titulo{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.topicos__novidades__texto{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.novidades__email{
+    border: 1px solid var(--azul-escuro-texto);
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 90%;
+    font-size: 1rem;
+    color: var(--azul-escuro-texto);
+}
+
+.novidades__email::placeholder{
+    color: var(--azul-escuro-texto);
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+    background-position: 1rem;
+    padding: 3rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width:1024px){
+    .topicos__lista__titulo{
+        font-size: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .topicos__links{
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+
+    .topicos__itens{
+        margin: 1.5rem 0.5rem;
+    }
+
+    .topicos__lista{
+        padding: 2rem 8rem;
+    }
+
+    .topicos__novidades{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .topicos__novidades__secao{
+        width: 22rem;
+    }
+
+    .topicos__novidades__titulo{
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    .novidades__email{
+        width: 22rem;
+    }
+}
+
+@media screen and (min-width:1728px){
+    .topicos__lista{
+        padding: 2rem 16rem;
+    }
+}
